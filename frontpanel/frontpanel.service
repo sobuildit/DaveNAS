@@ -1,0 +1,11 @@
+[Unit]
+ Description=DaveNAS front panel service
+ After=multi-user.target
+
+ [Service]
+ Type=idle
+ ExecStart=/usr/bin/python3 /home/pi/display_stat.py
+
+ [Install]
+ WantedBy=multi-user.target
+
